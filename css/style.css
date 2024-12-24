@@ -1,0 +1,18 @@
+:root {
+--main-bcg: #302C42;
+--text-color: #FFFFFF;
+--textbtn-color: #343045;
+ }
+ 
+ 
+body {
+    font-family: "Montserrat";
+    /* background-color: var(--main-bcg); */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 4px solid rgba(14, 48, 238, 0.801);
+}
