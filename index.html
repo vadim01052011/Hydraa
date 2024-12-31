@@ -7,13 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
+            <div class="header-wrapper">
             <ul class="header-logos">
                 <li class="header-element"><a href="./index.html" class="header-logo"><img src="./images/logo-small.png" alt=""></a></li>
                 <li class="header-element"><a href="./index.html" class="header-logo"><img src="./images/hydra-text.png" alt=""></a></li>
@@ -26,61 +31,63 @@
                     <li class="nav-item"><a href="" class="nav-link">HOW TO</a></li>
                 </ul>
             </nav>
+        
 <ul class="header-list">
-    <li class="header-item"><button type="button" class="header-buttton">CONTACT US</button></li>
-    <li class="header-item"><button type="button" class="header-buttton">JOIN HYDRA</button></li>
+    <li class="header-item"><button type="button" class="header-btn">CONTACT US</button></li>
+    <li class="header-item"><button type="button" class="header-join">JOIN HYDRA</button></li>
 </ul>
+</div>
         </div>
     </header>
     <section class="hero">
         <div class="container">
+            <div class="hero-box">
+            <div class="hero-wrapper">
             <ul class="hero-list">
                 <li class="hero-item">
-                    <h1 class="hero-title"><span class="hero-span">Dive</span>Into The Depths</h1>
+                    <h1 class="hero-title"><span class="hero-span">Dive</span> Into The Depths</h1>
                 </li>
                 <li class="hero-item">
-                    <h1 class="hero-title">Of<span class="hero-span">Virtual Reality</span></h1>
+                    <h1 class="hero-title">Of<span class="hero-span"> Virtual Reality</span></h1>
                 </li>
             </ul>
             <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore 
                 nisl tincidunt eget. Lectus mauris eros in vitae .</p>
-                <button type="button" class="hero-button">BUILD YOUR WORLD</button>
+                <div class="hero-flex">
+                <button type="button" class="hero-button animate__animated animate__zoomIn">BUILD YOUR WORLD</button>
                 <svg class="hero-icon">
-                    <use></use>
+                    <use href="./images/symbol-defs.svg#arrow-small-right"></use>
                 </svg>
+                </div>
+            </div>
                 <img src="./images/women-in-vr.jpg" alt="" class="hero-img">
+            </div>
                 <ul class="box-list">
                     <li class="box-item">
                         <div class="box-wrapper">
-                        <svg class="box-icon">
-                            <use></use>
-                        </svg>
+                        <img src="./images/locationn.png" alt="">
                         <div class="box-tion">
                         <h3 class="box-title">Pay Us a Visit</h3>
-                            <p class="box-text">Union St, Seattle, WA 98101, United States</p>
+                            <p class="box-text">Union St, Seattle, WA 98101, United States</p>        
                         </div>
                     </div>
                     </li>      
                     <li class="box-item">
                         <div class="box-wrapper">
-                        <svg class="box-icon">
-                            <use></use>                    
-                        </svg>
+                        <img src="./images/call.png" alt="" class="box-img">
                         <div class="box-tion">
                         <h3 class="box-title">Give Us a Call</h3>
-                       <a href="tel:(110)1111-1010">(110) 1111-1010</a>
+                       <a href="tel:(110)1111-1010" class="box-text">(110) 1111-1010</a>   
                     </div>
                 </div>
                     </li>
                     <li class="box-item">
                         <div class="box-wrapper">      
-                        <svg class="box-icon">
-                            <use></use>                
-                        </svg>
+                       <img src="./images/mail.png" alt="" class="box-picture">
                         <div class="box-tion">
                         <h3 class="box-title">Send Us a Message</h3>
-                       <a href="mailto:Contact@HydraVTech.com">Contact@HydraVTech.com</a>
+                       <a href="mailto:Contact@HydraVTech.com" class="box-text">Contact@HydraVTech.com</a>  
                     </div>
                 </div>
                     </li>
@@ -95,11 +102,11 @@
                     <h2 class="intro-title">INTRODUCTION</h2>
                 </li>
                 <li class="intro-item">
-                    <h2 class="intro-title">TO HYDRA VR</h2>
+                    <h2 class="intro-subtitle">TO HYDRA VR</h2>
                 </li>
             </ul>
             <svg class="intro-icon">
-                <use></use>
+                <use href="./images/symbol-defs.svg#big-arrow-right"></use>
             </svg>
             <p class="intro-text">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                 nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
@@ -108,9 +115,10 @@
             </div>
             <div class="about">
                 <img src="./images/men-in-vr.jpg" alt="" class="about-img">
+                <div class="about-box">
                 <ul class="about-list">
                     <li class="about-item"><h2 class="about-title">ABOUT</h2></li>
-                    <li class="about-item"><h2 class="about-title">HYDRA VR</h2></li>
+                    <li class="about-item"><h2 class="about-subtitle">HYDRA VR</h2></li>
                 </ul>
                 <p class="about-text">Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
                     urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
@@ -122,27 +130,29 @@
                     retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
                     n tempor.</p>
                     <button type="button" class="about-button">LET’S GET IN TOUCH</button>
-                
+                </div>
             </div>
         </div>
     </section>
     <section class="services">
         <div class="container">
+            <div class="services-wrapper">
             <ul class="services-box">
                 <li class="services-element">
                     <h2 class="services-title">WHY BUILD</h2>
                 </li>
                 <li class="services-element">
-                    <h2 class="services-title">WITH HYDRA?</h2>
+                    <h2 class="services-altitle">WITH HYDRA?</h2>
                 </li>
             </ul>
             <svg class="services-icon">
                 <use></use>
             </svg>
-            <p class="services-text">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+            <p class="services-textt">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
                 nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
                 quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
                 lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+        </div>
                 <ul class="services-list">
                     <li class="services-item">
                         <img src="./images/simulation.png" alt="" class="services-img">
@@ -151,7 +161,9 @@
                         <p class="services-text">Vitae sapien pellentesque habitant morbi
 nunc. Viverra aliquet  porttitor rhoncus 
 libero justo laoreet sit amet vitae.</p>
+                         <div class="services-position">
                         <button type="button" class="services-button">TRY IT NOW</button>
+                         </div>
                     </li>
                     <li class="services-item">
                         <img src="./images/education.png" alt="" class="services-img">
@@ -160,7 +172,9 @@ libero justo laoreet sit amet vitae.</p>
                         <p class="services-text">Vitae sapien pellentesque habitant morbi
 nunc. Viverra aliquet  porttitor rhoncus 
 libero justo laoreet sit amet vitae.</p>
+                         <div class="services-position">
                         <button type="button" class="services-button">TRY IT NOW</button>
+                         </div>
                     </li>
                     <li class="services-item">
                         <img src="./images/self-care.png" alt="" class="services-img">
@@ -169,7 +183,9 @@ libero justo laoreet sit amet vitae.</p>
                         <p class="services-text">Vitae sapien pellentesque habitant morbi
 nunc. Viverra aliquet  porttitor rhoncus 
 libero justo laoreet sit amet vitae.</p>
+                         <div class="services-position">
                         <button type="button" class="services-button">TRY IT NOW</button>
+                         </div>
                     </li>
                     <li class="services-item">
                         <img src="./images/outdoor.png" alt="" class="services-img">
@@ -178,7 +194,9 @@ libero justo laoreet sit amet vitae.</p>
                         <p class="services-text">Vitae sapien pellentesque habitant morbi
 nunc. Viverra aliquet  porttitor rhoncus 
 libero justo laoreet sit amet vitae.</p>
+                         <div class="services-position"> 
                         <button type="button" class="services-button">TRY IT NOW</button>
+                         </div>
                     </li>
                 </ul>
         </div>
@@ -190,12 +208,14 @@ libero justo laoreet sit amet vitae.</p>
                     <h2 class="tech-title">TECHNOLOGIES & HARDWARE</h2>
                 </li>
                 <li class="tech-item">
-                    <h2 class="tech-title">USED BY HYDRA VR.</h2>
+                    <h2 class="tech-subtitle">USED BY HYDRA VR.</h2>
                 </li>
             </ul>
+            <div class="tech-wrap">
             <svg class="tech-icon">
-                <use></use>
+                <use href="./images/symbol-defs.svg#chevron-small-down"></use>
             </svg>
+        </div>
             <ul class="tech-images">
                 <li class="tech-element"><img src="./images/unreal-engine.png" alt="" class="tech-img"></li>
                 <li class="tech-element"><img src="./images/unity.png" alt="" class="tech-img"></li>
@@ -206,63 +226,85 @@ libero justo laoreet sit amet vitae.</p>
     </section>
 <section class="process">
     <div class="container">
+        <div class="process-wrapper">
         <ul class="process-box">
             <li class="process-element">
-                <h2 class="process-title">WHY BUILD</h2>
+                <h2 class="process-title">HOW WE BUILD</h2>
             </li>
             <li class="process-element">
-                <h2 class="process-title">WITH HYDRA?</h2>
+                <h2 class="process-subtitle">WITH HYDRA VR?</h2>
             </li>
         </ul>
         <svg class="process-icon">
-            <use></use>
+            <use href="./images/symbol-defs.svg#big-arrow-right"></use>
         </svg>
         <p class="process-text">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
             nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
             quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
             lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
+        </div>
             <ul class="process-list">
                 <li class="process-item">
-                    <div class="process-wrapper">
+                    <div class="process-bcg">
                         <p class="process-decoration">01</p>        
-                    </div>
-                    <svg class="process-img">
-                        <use></use>     
-                    </svg>
-                    <h3 class="process-subtitle">3D Conception
-                        & Design</h3>
+                    </div>                 
                 </li>
                 <li class="process-item">
-                    <div class="process-wrapper">
+                    <div class="process-bcg">
                         <p class="process-decoration">02</p>                      
-                    </div>
-                    <svg class="process-img">
-                        <use></use>
-                    </svg>
-                    <h3 class="process-subtitle">Interaction
-                        Design</h3>
+                    </div>                 
                 </li>
                 <li class="process-item">
-                    <div class="process-wrapper">
+                    <div class="process-bcg">
                         <p class="process-decoration">03</p>
-                    </div>
-                    <svg class="process-img">
-                        <use></use>
-                    </svg>
-                    <h3 class="process-subtitle">VR World
-                        User Testing</h3>
+                    </div>               
                 </li>
                 <li class="process-item">
-                    <div class="process-wrapper">
+                    <div class="process-bcg">
                         <p class="process-decoration">04</p>                     
-                    </div>
-                    <svg class="process-img">
-                        <use></use>
-                    </svg>
-                    <h3 class="process-subtitle">Hydra VR
-                        Deploy</h3>
-                </li>
+                    </div>                  
+               </li>
             </ul>
+            <ul class="process-items">
+                <li class="process-row">
+                    <div class="process-wrap">
+                    <svg class="process-img">
+                    <use></use>     
+                </svg>
+                <h3 class="process-heading">3D Conception
+                    & Design</h3> 
+                </div>
+                </li>
+                <li class="process-row">
+                    <div class="process-wrap">
+                    <svg class="process-img">
+                    <use></use>
+                </svg>
+                <h3 class="process-headline">Interaction
+                    Design</h3>
+                </div>
+            </li>
+                <li class="process-row">
+                    <div class="process-wrap">
+                    <svg class="process-img">
+                    <use></use>
+                </svg>
+                <h3 class="process-caption">VR World
+                    User Testing</h3>
+                </div>
+                </li>
+                   
+                <li class="process-row">
+                    <div class="process-wrap">
+                    <svg class="process-img">
+                    <use></use>
+                </svg>
+                <h3 class="process-subject">Hydra VR
+                    Deploy</h3>
+                </div>
+                </li>
+                    
+            </ul>     
     </div>
 </section>
 <section class="join">
@@ -273,6 +315,7 @@ libero justo laoreet sit amet vitae.</p>
 
 
         <form class="join-form">
+            <div class="join-wrapper">
             <label for="name" class="join-text"></label>
             <div class="join-row">
               <input type="text" id="name" class="join-field" required placeholder="First Name">
@@ -289,72 +332,84 @@ libero justo laoreet sit amet vitae.</p>
             <div class="join-row">
               <input type="email" id="mail" class="join-field" required placeholder="Phone Number">
             </div>
+            </div>
+            <div class="join-box">
             <label for="mail" class="join-text"></label>
             <div class="join-row">
-              <input type="email" id="mail" class="join-field" required placeholder="Subject">
+              <input type="email" id="mail" class="join-in" required placeholder="Subject">
             </div>
             <label for="comment" class="join-text"></label>
             <textarea id="comment" class="join-comment" placeholder="Tell Us Something..."></textarea>
-          </form>
+            </div>
+        </form>
+        <div class="join-wrap">
           <button type="submit" class="join-button">SEND TO HYDRA</button>
+        </div>
     </div>
 </section>
 <footer class="footer">
     <div class="container">
+        <div class="footer-wrapper">
         <a href="./index.html"><img src="./images/logo-big.png" alt="" class="footer-img"></a>
     <div class="footer-decoration"></div>
+    <div class="footer-box">
     <ul class="footer-where">
-        <li class="social-where"><a href="" class="social-where">ABOUT</a></li>  
-        <li class="social-where"><a href="" class="social-where">SERVICES</a></li>
-        <li class="social-where"><a href="" class="social-where">TECHNOLOGIES</a></li>
-        <li class="social-where"><a href="" class="social-where">HOW TO</a></li>
-        <li class="social-where"><a href="" class="social-where">JOIN HYDRA</a></li>
+        <li class="social-where"><a href="" class="social-link">ABOUT</a></li>  
+        <li class="social-where"><a href="" class="social-link">SERVICES</a></li>
+        <li class="social-where"><a href="" class="social-link">TECHNOLOGIES</a></li>
+        <li class="social-where"><a href="" class="social-link">HOW TO</a></li>
+        <li class="social-where"><a href="" class="social-link">JOIN HYDRA</a></li>
     </ul>
     <div class="footer-decoration"></div>
-    <ul class="fotter-partition">
+    <ul class="footer-partition">
         <li class="partition-item"><a href="" class="partition-link">F.A.Q</a></li>     
         <li class="partition-item"><a href="" class="partition-link">SITEMAP</a></li>
         <li class="partition-item"><a href="" class="partition-link">CONDITIONS</a></li>
         <li class="partition-item"><a href="" class="partition-link">LICENSES</a></li>
     </ul>
     <div class="footer-decoration"></div>
+    <div class="footer-inner">
     <h3 class="footer-title">SOCIALIZE WITH HYDRA</h3>
     <ul class="footer-social">
         <li class="social-item">
             <svg class="social-icon">
-                <use></use>
+                <use href="./images/symbol-defs.svg#facebook"></use>
             </svg>
         </li>
         <li class="social-item">
             <svg class="social-icon">
-                <use></use>
+                <use href="./images/symbol-defs.svg#twitter"></use>
             </svg>
         </li>
         <li class="social-item">
             <svg class="social-icon">
-                <use></use>
+                <use href="./images/symbol-defs.svg#linkedinn"></use>
             </svg>
         </li>
         <li class="social-item">
             <svg class="social-icon">
-                <use></use>
+                <use href="./images/symbol-defs.svg#youtube"></use>
             </svg>
         </li>
         <li class="social-item">
             <svg class="social-icon">
-                <use></use>
+                <use href="./images/symbol-defs.svg#instagram"></use>
             </svg>
         </li>
         <li class="social-item">
             <svg class="social-icon">
-                <use></use>
+                <use href="./images/symbol-defs.svg#youtube"></use>
             </svg>
         </li>
     </ul>
     <button type="button" class="footer-button">BUILD YOUR WORLD</button>
+    </div>
+</div>
+    </div>
     <div class="footer-last"></div>
     <p class="footer-text">2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED </p>
 </div>
 </footer>
+<script src="./script.js"></script>
 </body>
 </html>
