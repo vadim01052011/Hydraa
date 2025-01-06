@@ -20,7 +20,7 @@ body {
     padding-right: 5px;
     margin-right: auto;
     margin-left: auto;
-    /* outline: 2px red solid; */
+    outline: 2px red solid;
 }
 
 
@@ -267,6 +267,7 @@ background: rgba(0, 0, 0, 0.13);
 
 .hero-img {
     border-radius: 100px 100px 100px 240px;
+    border: rgba(0, 0, 0, 0.13) 20px solid;
 }
 
 
@@ -564,6 +565,8 @@ border-radius: 50%;
   margin-bottom: 21px;
   margin-left: auto;
   margin-right: auto;
+  border: 14px solid rgba(14, 14, 14, 0.32);
+  border-radius: 50%;
 }
 
 
@@ -633,14 +636,13 @@ background-color: transparent;
     padding-left: 343px;
     padding-right: 358px;
     padding-bottom: 96px;
-background: #211E2E;
-box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
-background-image: url(../images/hardware.jpg);
-background-size: 1278px 303px;
-background-repeat: no-repeat;
-position: relative;
+    background: #211E2E;
+    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+    background-image: url(../images/hardware.jpg);
+    background-size: 1278px 303px;
+    background-repeat: no-repeat;
+    /* position: relative; */
 }
-
 
 .tech-title {
     text-align: center;
@@ -672,15 +674,17 @@ flex-shrink: 0;
     background: linear-gradient(268deg, #C0B7E8 -0.6%, #8176AF 98.31%);
 } */
 
-.tech-icon {
-    width: 70px;
-    height: 70px;
-    fill: linear-gradient(268deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+/* .tech-button {
+    width: 100px;
+    height: 100px;
+    background-color: #433D60;
     position: absolute;
-    bottom: -233%;
-    left: 47%;
-    right: 50%;
-}
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 15px solid #0E0E0E;
+    display: inline-block;
+} */
 
 .tech-images {
     display: flex;
@@ -1037,10 +1041,9 @@ border: 2px solid var(--text-color);
 .footer-img:hover {
     transform: scale(1.2);
     opacity: 0.5;
-   
+    
 
 } 
-
 
 /* @keyframes rotating {
     from {
@@ -1052,19 +1055,16 @@ border: 2px solid var(--text-color);
     }
 } */
 
-.footer-img::after {
-    /* content: '';
-    background: radial-gradient(50% 50% at 50% 50%, #C0B7E8 0%, #302C42 100%);
-    width: 6px;
-    height: 196px;
-    display: block; */
-}
-
 
 
 .footer-box {
     display: flex;
     align-items: baseline;
+    align-items: center;
+}
+
+.footer-boxx {
+    display: flex;
     align-items: center;
 }
 
